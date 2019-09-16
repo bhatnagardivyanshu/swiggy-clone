@@ -1,0 +1,9 @@
+.main {
+  @import './variables/colors';
+  @import './variables/typography';
+
+  @import './components/sidebar';
+  @import './components/restaurant_section';
+
+  padding: 0 7rem 3rem;
+}

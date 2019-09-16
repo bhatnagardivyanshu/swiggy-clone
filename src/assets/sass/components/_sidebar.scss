@@ -1,0 +1,41 @@
+.sidebar-section-container {
+  position: sticky;
+  top: 0px;
+
+  .sidebar {
+    padding-top: 2rem;
+    box-shadow: 0 2px 4px 0 rgba(48, 56, 97, 0.2);
+    cursor: pointer;
+
+    .selected {
+      .sidebar-category-item {
+        background: $primary;
+        color: $white;
+      }
+    }
+
+    .sidebar-category-item {
+      color: $primary;
+      text-transform: capitalize;
+      font-family: ProximaNova;
+      color: $gray-1;
+
+      .title {
+        font-size: $font-size-regular;
+        font-weight: 800;
+      }
+
+      .subtitle {
+        opacity: 0.8;
+        font-size: $font-size-x-small;
+        margin-top: 2px;
+        text-transform: uppercase;
+      }
+
+      &:not(.selected):hover .title,
+      &:not(.selected):hover subtitle {
+        color: $primary;
+      }
+    }
+  }
+}
