@@ -11,6 +11,10 @@
       .sidebar-category-item {
         background: $primary;
         color: $white;
+
+        &:hover .title {
+          color: $white;
+        }
       }
     }
 
@@ -32,8 +36,8 @@
         text-transform: uppercase;
       }
 
-      &:not(.selected):hover .title,
-      &:not(.selected):hover subtitle {
+      &:hover .title,
+      &:hover subtitle {
         color: $primary;
       }
     }

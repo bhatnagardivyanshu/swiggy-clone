@@ -3,11 +3,12 @@ import React from 'react';
 import SidebarCategoryItem from './SidebarCategoryItem';
 import { getSidebarCategoryItems } from '../../services/CommonService';
 
-const SidebarSection = ({ restaurants, onCategoryClick }) => {
-  const items = getSidebarCategoryItems(restaurants);
+const SidebarSection = ({ onCategoryClick, categorize }) => {
+  const items = getSidebarCategoryItems();
 
   const sidebarList = items.map((category, index) => (
     <SidebarCategoryItem
+      categorize={categorize}
       onCategoryClick={onCategoryClick}
       key={'category_' + index}
       category={category}
